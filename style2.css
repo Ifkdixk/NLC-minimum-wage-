@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+   }
+body {
+      display:flex;
+      align-items: center ;
+      
+      justify-content: center;
+      min-height:100vh;
+      background: #f7f7f7;
+}
+.wrapper{
+      background: #fff;
+      width: 350px;
+      height: 100%;
+      min-height: 350px;
+      border-radius: 16px;
+      box-shadow: 0 0 12px 0 rgba(0,0,0,0.3), 0 32px 64px -40px rgba(0,0,0,0.5);
+}
+
+.google-logo {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  display : flex;
+  justify-content: center ;
+  align-items: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+h4[class="s"]{
+     font-size: 22px;
+     font-weight: 500;
+     color : #333;
+     display : flex;
+  justify-content: center ;
+  align-items: center;
+   
+}
+h5[class="s"]{
+     font-size: 15px;
+     font-weight: 500;
+     color : #7e7e7e;
+     display : flex;
+  justify-content: center ;
+  align-items: center;
+   
+}
+
+.blue {
+  color: #4285F4;
+}
+
+.red {
+  color: #ff000a;
+}
+
+.yellow {
+  color: #FFFF00;
+}
+
+.green {
+  color: #34A853;
+}
+
+/* signup form css code */
+.form{
+      padding :25px 30px;
+}
+.form form .field{
+      display: flex;
+      position:relative;
+      flex-direction: column;
+      margin-bottom: 10px;   
+}
+.form form .field label{
+      margin-top: -13px;
+      margin-left: 7px;
+      width: 140px;
+      padding-left: 5px;
+      position : absolute ;
+      font-size: 15px;
+      font-weight: 400;
+      color : #2600ffdc;
+      background: #fff;
+}
+.form form .field label[class="label"]{
+      margin-top: -13px;
+      margin-left: 7px;
+      width: 95px;
+      padding-left: 5px;
+      position : absolute ;
+      font-size: 15px;
+      font-weight: 400;
+      color : #2600ffdc;
+      background: #fff;
+}
+.form form .field input{
+     outline: none; 
+}
+h3{
+      font-size: 10px;
+      font-weight: 450;
+      color : #2600ffdc;
+}
+h4{
+      font-size: 10px;
+      font-weight: 450;
+      color : #909090;
+}
+.form form .input input {
+      height: 50px;
+      width: 100%;
+      font-size: 16px;
+      padding : 0 10px;
+      border: 1.5px solid #2600ffdc;
+      border-radius: 5px;
+}
+.form form .button button{
+      margin-top:15px;
+      margin-bottom:15px;
+      position : absolute ;
+      right: 0;
+      height: 40px;
+      width: 100px;
+      border: none;
+      font-size: 15px;
+      font-weight: 400;
+      background: #2600ffdc;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+}
+.form form .field i{
+      position: absolute;
+      right:15px;
+      color: #ccc;
+      top:70%;
+      margin-top: -9px;
+      transform : translateY(-50%);
+      cursor:pointer;
+}
+.form form .field i.active::before{
+     color: #333;
+      content: "\f070";
+      
+}
+.form .link {
+      font-size: 11px;
+      font-weight: 500;
+      margin-top: 25px;
+}
+.form .link a{
+      color : #2600ffdc;
+}
+.form .link a:hover{
+      text-decoration: underlined;
+}
+

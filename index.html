@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minimum Wage Increase Feedback Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Minimum Wage Increase Feedback Form</h1>
+	<p>The government is considering increasing the minimum wage in Nigeria and wants to hear your thoughts. Please take a moment to complete this form and let us know your opinions.</p>
+	<img src="img.jpeg" alt="">
+<form id="feedback-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="company">Company:</label>
+  <input type="text" id="company" name="company" required><br><br>
+  <label for="position">Position:</label>
+  <input type="text" id="position" name="position" required><br><br>
+  <label for="current-wage">Current Wage:</label>
+  <input type="number" id="current-wage" name="current-wage" required><br><br>
+  <label for="proposed-wage">Proposed Wage:</label>
+  <input type="number" id="proposed-wage" name="proposed-wage" required><br><br>
+  <label for="feedback">Feedback:</label>
+  <textarea id="feedback" name="feedback" required></textarea><br><br>
+  <button><a href="index2.html">submit</a></button>
+</form>
+	<script>
+	  
+const form = document.getElementById("feedback-form");
+const link = document.querySelector("a");
+
+link.addEventListener("click", (e) => {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const company = document.getElementById("company").value;
+  const position = document.getElementById("position").value;
+  const currentWage = document.getElementById("current-wage").value;
+  const proposedWage = document.getElementById("proposed-wage").value;
+  const feedback = document.getElementById("feedback").value;
+
+  if (
+    name === "" ||
+    email === "" ||
+    company === "" ||
+    position === "" ||
+    currentWage === "" ||
+    proposedWage === "" ||
+    feedback === ""
+  ) {
+    e.preventDefault();
+    alert("Please fill out all form fields before submitting.");
+  }
+});
+</body>
+</html>
